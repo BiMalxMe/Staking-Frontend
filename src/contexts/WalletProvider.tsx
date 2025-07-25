@@ -7,7 +7,6 @@ import {
   SolflareWalletAdapter,
   TorusWalletAdapter,
 } from '@solana/wallet-adapter-wallets';
-import { clusterApiUrl } from '@solana/web3.js';
 
 // Import wallet adapter CSS
 import '@solana/wallet-adapter-react-ui/styles.css';
@@ -17,8 +16,10 @@ interface Props {
 }
 
 export const WalletContextProvider: React.FC<Props> = ({ children }) => {
+  // Use the devnet connection from the .env VITE_HELIUS_DEVNET
+  const endpoint = useMemo(() => import.meta.env.VITE_HELIUS_DEVNET, []);
+
   const network = WalletAdapterNetwork.Devnet;
-  const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
   const wallets = useMemo(
     () => [
