@@ -24,8 +24,5 @@ dist-ssr
 *.sw?
 
 
-assets
-
-contexts
 
 pages
