@@ -11,12 +11,18 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      // Alias buffer to the npm buffer package
+      buffer: "buffer",
     },
+  },
+  define: {
+    // Polyfill global variables
+    global: {},
+    "process.env": {},
   },
 }));
