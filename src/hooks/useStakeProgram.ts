@@ -325,6 +325,21 @@ export const useStakeProgram = () => {
       });
       return;
     }
+
+    // Calculate how many points can be claimed as SOL
+    // 100000 points = 1 SOL
+    // calculatedPoints is in "points" (integer)
+    const points = Math.floor(calculatedPoints);
+
+    if (points < 50000) {
+      toast({
+        title: "Error",
+        description: `You need at least 50000 points to claim.`,
+        variant: "destructive",
+      });
+      return;
+    }
+
     setLoading(true);
     try {
       // 1. Call the on-chain claimPoints to update the user's points state
@@ -345,10 +360,8 @@ export const useStakeProgram = () => {
       await connection.confirmTransaction({ signature: claimSignature, blockhash: claimBlockhash, lastValidBlockHeight: claimLastValidBlockHeight }, 'confirmed');
 
       // 2. Calculate how many points can be claimed as SOL
-      // 10000 points = 1 SOL
-      // calculatedPoints is in "points" (integer)
-      const points = Math.floor(calculatedPoints);
       const solToClaim = Math.floor(points / POINTS_PER_SOL); // integer SOL to claim
+
       if (solToClaim > 0) {
         // 3. Transfer SOL from the points account to the user
         const lamportsToSend = solToClaim * LAMPORTS_PER_SOL;
@@ -384,9 +397,11 @@ export const useStakeProgram = () => {
         });
       } else {
         toast({
-          title: "Points Claimed",
-          description: `Claimed ${points} points successfully! (Need at least ${POINTS_PER_SOL} points to claim 1 SOL)`,
+          title: "Error",
+          description: `You need at least 100000 points to claim 1 SOL.`,
+          variant: "destructive",
         });
+        return;
       }
       await fetchStakeAccount();
       await fetchWalletBalance();
@@ -456,3 +471,5 @@ export const useStakeProgram = () => {
     fetchWalletBalance,
   };
 };
+
+
