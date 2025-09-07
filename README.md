@@ -1,65 +1,57 @@
-# live demo video   
-https://www.youtube.com/watch?v=kELW__kL0S4
+# 🎯 Staking FE  
 
-# program code in
-https://github.com/BiMalxMe/Stake-Program
+Welcome to **Staking FE**!  
+The project is now live at 👉 [bimalxstake.vercel.app](https://bimalxstake.vercel.app)  
 
-
-# SOL Point Forge
-
-Welcome to **SOL Point Forge**!  
-This project is now live at [bimalxstake.vercel.app](https://bimalxstake.vercel.app).
+📺 **Demo Video:** [YouTube](https://www.youtube.com/watch?v=kELW__kL0S4)  
+💻 **Program Code:** [GitHub](https://github.com/BiMalxMe/Stake-Program)  
 
 ---
 
-## 🚀 About the Project
+## 🚀 About the Project  
 
-SOL Point Forge is a decentralized staking and rewards platform built on the Solana blockchain. Users can stake SOL, earn points over time, and claim rewards in SOL based on their accumulated points. The project is designed to be fast, secure, and user-friendly, leveraging the power of Solana's high-performance network.
+**Staking FE** is a decentralized staking and rewards platform built on the **Solana blockchain**.  
+Users can stake SOL, earn points in real time, and claim rewards directly in SOL based on their accumulated points.  
 
----
-
-## 🌟 Project Qualities
-
-- **Decentralized & Trustless:** All staking and reward logic is handled on-chain via Solana smart contracts.
-- **Real-Time Points Accumulation:** Points are calculated in real time based on the amount of SOL staked and the duration.
-- **Transparent Rewards:** Users can claim SOL rewards directly proportional to their earned points.
-- **Secure Transactions:** All transactions use fresh blockhashes and proper error handling to ensure reliability and security.
-- **Responsive UI:** The frontend is built for speed and usability, providing instant feedback and clear information.
-- **Automatic Updates:** Wallet balances and points are refreshed automatically, so users always see up-to-date information.
-- **Error Handling:** Friendly and descriptive error messages guide users through any issues.
+The app is designed to be **fast, secure, and user-friendly**, powered by Solana’s high-performance network and a modern React frontend.  
 
 ---
 
-## 🛠️ Implementation Details
+## 🌟 Key Features  
 
-- **Frontend:** Built with React and TypeScript for a robust and maintainable codebase.
-- **Solana Integration:** Uses the Solana web3.js library for wallet connections, transactions, and on-chain interactions.
-- **Smart Contracts:** Custom Solana programs manage staking, points calculation, and reward distribution.
-- **Points System:**  
-  - 100,000 points = 1 SOL reward  
-  - Minimum 50,000 points required to claim  
-  - Points are earned based on staked SOL and time elapsed
-- **Security:**  
-  - All transactions use fresh blockhashes to prevent replay attacks  
-  - Private keys for reward distribution are securely managed
-- **Deployment:** Hosted on [Vercel](https://vercel.com/) for fast, global access.
+- **On-Chain Logic:** All staking and rewards handled by Solana smart contracts  
+- **Real-Time Points System:** Earn points automatically based on SOL staked and time elapsed  
+- **Transparent Rewards:**  
+  - 100,000 points = 1 SOL  
+  - Claim available once you reach 50,000 points  
+- **Safe Transactions:** Fresh blockhashes and strict error handling prevent replay attacks  
+- **Smooth UI:** Responsive React + TypeScript frontend for instant feedback and clear UX  
+- **Live Balance Updates:** Wallet balances and points refresh automatically  
+- **Helpful Error Messages:** Easy-to-understand guidance for troubleshooting  
 
 ---
 
-## 🌐 Live Demo
+## 🛠️ Tech Stack  
 
-Check out the live app: [bimalxstake.vercel.app](https://bimalxstake.vercel.app)
-
----
-
-## 🙌 Get Started
-
-1. Connect your Solana wallet.
-2. Stake SOL to start earning points.
-3. Watch your points grow in real time.
-4. Claim your SOL rewards once you reach the minimum points threshold.
+- **Frontend:** React + TypeScript  
+- **Blockchain Integration:** Solana web3.js  
+- **Smart Contracts:** Custom Solana programs for staking, points, and rewards  
+- **Deployment:** Vercel for fast and global hosting  
 
 ---
 
-Thank you for checking out SOL Point Forge!  
-Feel free to try it out and share your feedback.
+## 🌐 Try It Out  
+
+1. Connect your Solana wallet  
+2. Stake SOL to start earning points  
+3. Watch your points grow in real time  
+4. Claim rewards when you hit the threshold  
+
+👉 **Live App:** [bimalxstake.vercel.app](https://bimalxstake.vercel.app)  
+
+---
+
+## 🙌 Feedback  
+
+Thanks for checking out **Staking FE**!  
+Your suggestions and feedback are always welcome. 🚀  
