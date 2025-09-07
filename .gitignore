@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.DS_Store
 
 node_modules
 dist
@@ -24,3 +25,6 @@ dist-ssr
 *.sw?
 
 
+config.bat
+temp_auto_push.bat
+temp_interactive_push.bat
